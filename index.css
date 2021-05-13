@@ -137,7 +137,7 @@ section {
   padding-left: 12px;
 }
 
-#external-resources > li.newsletter::before {
+#external-resources li.newsletter::before {
   content: "📰";
 }
 

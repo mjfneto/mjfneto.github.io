@@ -8,6 +8,7 @@
     <title>Mario Freire's Portfolio</title>
   </head>
   <body>
+    <div id="#top"></div>
     <header>
       <div class="about-me">
         <div class="banner"></div>
@@ -37,9 +38,9 @@
     </header>
     <div class="container">
       <main>
-        <section>
+        <section id="index">
           <h2>Index</h2>
-          <ul id="index">
+          <ul>
             <li class="hover-linen"><a href="#hard-skills">Hard skills</a></li>
             <li class="hover-linen"><a href="#soft-skills">Soft skills</a></li>
             <li class="hover-linen">
@@ -49,8 +50,10 @@
         </section>
         <hr />
         <section>
-          <h2 class="hover-linen"><a href="#index">Hard Skills</a></h2>
-          <ul id="hard-skills" class="skills ranked">
+          <h2 id="hard-skills" class="hover-linen">
+            <a href="#index">Hard Skills</a>
+          </h2>
+          <ul class="skills ranked">
             <li class="checkmark four-stars">English 🇬🇧:</li>
             <li class="checkmark">Git 🎋:</li>
             <li class="checkmark">GitHub 🐙:</li>
@@ -59,8 +62,10 @@
             <li class="checkmark four-stars">JS ⚙️:</li>
             <li class="checkmark">React ⚛️:</li>
           </ul>
-          <h2 class="hover-linen"><a href="#index">Soft Skills</a></h2>
-          <ul id="soft-skills" class="skills ranked">
+          <h2 id="soft-skills" class="hover-linen">
+            <a href="#index">Soft Skills</a>
+          </h2>
+          <ul class="skills ranked">
             <li class="checkmark three-stars">Communication 🎭:</li>
             <li class="checkmark three-stars">Self-management 🎭:</li>
             <li class="checkmark">Teamwork 🎭:</li>
@@ -73,9 +78,11 @@
           </ul>
         </section>
         <hr />
-        <section>
-          <h2 class="hover-linen"><a href="#index">External resources</a></h2>
-          <ul id="external-resources" class="ranked">
+        <section id="external-resources">
+          <h2 class="hover-linen">
+            <a href="#index">External resources</a>
+          </h2>
+          <ul class="ranked">
             <li class="newsletter five-stars">
               <a href="https://javascriptweekly.com/" target="_blank"
                 >JavaScript Weekly</a
@@ -86,7 +93,7 @@
       </main>
       <hr />
       <footer class="container footer">
-        <a class="hover-linen" href="#my-img">Back to top</a>
+        <a class="hover-linen" href="#top">Back to top</a>
       </footer>
     </div>
   </body>
