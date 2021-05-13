@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  background: #fdf0e3;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -34,7 +35,7 @@ a {
 }
 
 a[target="_blank"]:hover {
-  background-color: #3956;
+  background-color: #e2fdf0;
 }
 
 .flex-center {
@@ -48,7 +49,7 @@ a[target="_blank"]:hover {
 
 .hover-linen:hover {
   cursor: pointer;
-  background-color: #fdf0e3;
+  background-color: #fde2e7;
 }
 
 .container {
