@@ -83,7 +83,8 @@ section {
   left: 0;
   right: 0;
   z-index: -1;
-  background-image: url("./img/tahitian_landscape_paul_gauguin.jpg"); /* License: Public domain */
+  background: url("./img/tahitian_landscape_paul_gauguin.jpg") no-repeat center
+    top/cover; /* License: Public domain */
   padding: 20px 0;
   opacity: 0.65;
 }
