@@ -38,13 +38,16 @@ a[target="_blank"]:hover {
   background-color: #e2fdf0;
 }
 
-.flex-center {
+.flex {
   display: flex;
+}
+
+.align-cntr {
   align-items: center;
 }
 
-.sb {
-  justify-content: space-between;
+.justify-cntr {
+  justify-content: center;
 }
 
 .hover-linen:hover {
@@ -78,6 +81,23 @@ a[target="_blank"]:hover {
 .about-me .name {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.about-me .social {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.about-me .social > .medium {
+  width: 30px;
+  height: 30px;
+  margin: 0 2.5px;
+  border-radius: 50%;
+  transition: background 200ms;
+}
+
+.about-me .social img {
+  width: 100%;
 }
 
 .about-me > .info {
