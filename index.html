@@ -8,7 +8,8 @@
     <title>Mario Freire's Portfolio</title>
   </head>
   <body>
-    <div class="container">
+    <div id="#top"></div>
+    <header>
       <div class="about-me">
         <div class="banner"></div>
         <div class="info">
@@ -17,45 +18,82 @@
             id="my-img"
             alt="Mario Freire"
           />
-          <h1>Mario Jardim Freire Neto</h1>
+          <h1 class="name">Mario Jardim Freire Neto</h1>
           <h2><em>Frontend Web Developer Jr.</em></h2>
           <p>Resende, <strong>Rio de Janeiro</strong></p>
-          <i>🇧🇷</i>
+          <i title="Brazil">🇧🇷</i>
+          <div class="flex align-cntr justify-cntr social">
+            <a class="medium" href="https://github.com/mjfneto/" target="_blank"
+              ><img src="/img/github.png" alt="GitHub"
+            /></a>
+            <a
+              class="medium"
+              href="https://www.linkedin.com/in/mariojardimfreireneto/"
+              target="_blank"
+              ><img src="/img/linkedin.png" alt="GitHub"
+            /></a>
+          </div>
         </div>
       </div>
-      <ul id="index">
-        <li class="hover-gray"><a href="#hard-skills">Hard skills</a></li>
-        <li class="hover-gray"><a href="#soft-skills">Soft skills</a></li>
-        <li class="hover-gray">
-          <a href="#external-resources">External resources</a>
-        </li>
-      </ul>
+    </header>
+    <div class="container">
       <main>
-        <h2 class="hover-gray"><a href="#index">Hard Skills</a></h2>
-        <ul id="hard-skills" class="skills ranked">
-          <li class="four-stars">English 🇬🇧:</li>
-          <li class="three-stars">HTML 🏗️:</li>
-          <li class="three-stars">CSS 💅:</li>
-          <li class="four-stars">JS ⚙️:</li>
-          <li class="three-stars">React ⚛️:</li>
-        </ul>
-        <h2 class="hover-gray"><a href="#index">Soft Skills</a></h2>
-        <ul id="soft-skills" class="skills ranked">
-          <li class="three-stars">Self-management 🎭:</li>
-          <li>Teamwork 🎭:</li>
-        </ul>
-        <h2 class="hover-gray"><a href="#index">External resources</a></h2>
-        <ul id="external-resources" class="ranked">
-          <li class="newsletter five-stars">
-            <a href="https://javascriptweekly.com/" target="_blank"
-              >JavaScript Weekly</a
-            >
-          </li>
-        </ul>
+        <section id="index">
+          <h2>Index</h2>
+          <ul>
+            <li class="hover-linen"><a href="#hard-skills">Hard skills</a></li>
+            <li class="hover-linen"><a href="#soft-skills">Soft skills</a></li>
+            <li class="hover-linen">
+              <a href="#external-resources">External resources</a>
+            </li>
+          </ul>
+        </section>
+        <hr />
+        <section>
+          <h2 id="hard-skills" class="hover-linen">
+            <a href="#index">Hard Skills</a>
+          </h2>
+          <ul class="skills ranked">
+            <li class="checkmark four-stars">English 🇬🇧:</li>
+            <li class="checkmark">Git 🎋:</li>
+            <li class="checkmark">GitHub 🐙:</li>
+            <li class="checkmark three-stars">HTML 🏗️:</li>
+            <li class="checkmark three-stars">CSS 💅:</li>
+            <li class="checkmark four-stars">JS ⚙️:</li>
+            <li class="checkmark">React ⚛️:</li>
+          </ul>
+          <h2 id="soft-skills" class="hover-linen">
+            <a href="#index">Soft Skills</a>
+          </h2>
+          <ul class="skills ranked">
+            <li class="checkmark three-stars">Communication 🎭:</li>
+            <li class="checkmark three-stars">Self-management 🎭:</li>
+            <li class="checkmark">Teamwork 🎭:</li>
+            <li class="checkmark">Leadership 🎭:</li>
+            <li class="checkmark four-stars">Responsibility 🎭:</li>
+            <li class="checkmark three-stars">Problem solving 🎭:</li>
+            <li class="checkmark">Time management 🎭:</li>
+            <li class="checkmark">Ability to work under pressure 🎭:</li>
+            <li class="checkmark three-stars">Flexibility 🎭:</li>
+          </ul>
+        </section>
+        <hr />
+        <section id="external-resources">
+          <h2 class="hover-linen">
+            <a href="#index">External resources</a>
+          </h2>
+          <ul class="ranked">
+            <li class="newsletter five-stars">
+              <a href="https://javascriptweekly.com/" target="_blank"
+                >JavaScript Weekly</a
+              >
+            </li>
+          </ul>
+        </section>
       </main>
       <hr />
       <footer class="container footer">
-        <a class="hover-gray" href="#my-img">Back to top</a>
+        <a class="hover-linen" href="#top">Back to top</a>
       </footer>
     </div>
   </body>
