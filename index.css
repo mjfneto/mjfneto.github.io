@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+ul,
+li {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 12px;
+}
+
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+  width: 100%;
+}
+
+a {
+  padding: 5px;
+  text-decoration: none;
+  color: initial;
+  display: inline-block;
+}
+
+a[target="_blank"]:hover {
+  background-color: #3956;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.sb {
+  justify-content: space-between;
+}
+
+.hover-gray:hover {
+  cursor: pointer;
+  background-color: #1111;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-me {
+  position: relative;
+  padding: 20px;
+}
+
+.about-me > .banner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url("./img/gauguin_background.jpg");
+  padding: 20px 0;
+  opacity: 0.65;
+}
+
+.about-me > .info {
+  text-align: center;
+}
+
+.about-me > .info > img {
+  max-width: 100%;
+  height: 100px;
+  width: 100px;
+  border: none;
+  border-radius: 50%;
+}
+
+#index {
+  margin-bottom: 60px;
+}
+
+#index > li > a {
+  display: block;
+  width: 100%;
+}
+
+.skills {
+  padding-left: 12px;
+}
+
+.skills > li::before {
+  padding-right: 12px;
+}
+
+.skills > li::before {
+  content: "\2714";
+}
+
+#external-resources > li.newsletter::before {
+  content: "📰";
+}
+
+.ranked > li::after {
+  content: "⭐⭐";
+  padding: 0 12px;
+}
+
+.ranked > .three-stars::after {
+  content: "⭐⭐⭐";
+}
+
+.ranked > .four-stars::after {
+  content: "⭐⭐⭐⭐";
+}
+
+.ranked > .five-stars::after {
+  content: "⭐⭐⭐⭐⭐";
+}
+
+.footer {
+  padding: 30px 0;
+  text-align: center;
+}
