@@ -38,6 +38,10 @@ a[target="_blank"]:hover {
   background-color: #e2fdf0;
 }
 
+section {
+  margin: 45px 0 60px 0;
+}
+
 .flex {
   display: flex;
 }
@@ -110,10 +114,6 @@ a[target="_blank"]:hover {
   width: 100px;
   border: none;
   border-radius: 50%;
-}
-
-#index {
-  margin-bottom: 60px;
 }
 
 #index > li > a {
