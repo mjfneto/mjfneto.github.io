@@ -43,9 +43,9 @@ a[target="_blank"]:hover {
   justify-content: space-between;
 }
 
-.hover-gray:hover {
+.hover-linen:hover {
   cursor: pointer;
-  background-color: #1111;
+  background-color: #fdf0e3;
 }
 
 .container {
