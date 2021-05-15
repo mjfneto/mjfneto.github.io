@@ -71,6 +71,10 @@ section {
   border-radius: 50%;
 }
 
+.icon > img {
+  max-width: 100%;
+}
+
 .about-me {
   position: relative;
   padding: 20px;
@@ -83,10 +87,29 @@ section {
   left: 0;
   right: 0;
   z-index: -1;
-  background: url("./img/tahitian_landscape_paul_gauguin.jpg") no-repeat center
+  background: url("./img/tahitian_landscape_paul_gauguin.jpg") no-repeat fixed
     top/cover; /* License: Public domain */
   padding: 20px 0;
-  opacity: 0.65;
+  opacity: 0.45;
+  transition: opacity 1s ease;
+}
+
+.banner-info:hover + .banner-title + .banner {
+  opacity: 0.8;
+}
+
+.about-me > .banner-title {
+  display: inline;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  background: #fdf0e3;
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.banner-info:hover + .banner-title {
+  opacity: 0.8;
 }
 
 .about-me .banner-info {
@@ -94,15 +117,11 @@ section {
   bottom: 5px;
   right: 5px;
   opacity: 0.5;
-  transition: opacity 200ms;
+  transition: opacity 400ms;
 }
 
 .about-me .banner-info:hover {
-  opacity: 0.9;
-}
-
-.about-me .banner-info > img {
-  max-width: 100%;
+  opacity: 1;
 }
 
 .about-me .name {
@@ -120,20 +139,26 @@ section {
   transition: background 200ms;
 }
 
-.about-me .social img {
-  width: 100%;
-}
-
 .about-me > .info {
   text-align: center;
+  transition: opacity 400ms;
 }
 
-.about-me > .info > img {
-  max-width: 100%;
-  height: 100px;
-  width: 100px;
-  border: none;
+.banner-info:hover + .banner-title + .banner + .info {
+  opacity: 0.05;
+}
+
+#avatar {
+  width: 150px;
+  height: 150px;
+  padding: 0.5rem;
   border-radius: 50%;
+  background: goldenrod;
+  transition: all 400ms ease;
+}
+
+#avatar:hover {
+  border-radius: 5%;
 }
 
 #index > li > a {
@@ -145,8 +170,17 @@ section {
   padding-left: 12px;
 }
 
+.skills > li:nth-child(even) {
+  color: #c0670d;
+}
+
+.skills > li:nth-child(odd) {
+  color: #e07810;
+}
+
 .skills > li::before {
   padding-right: 12px;
+  color: initial;
 }
 
 .skills > li.checkmark::before {
@@ -164,6 +198,7 @@ section {
 .ranked > li::after {
   content: "⭐⭐";
   padding: 0 12px;
+  text-shadow: 0px 0px 8px goldenrod;
 }
 
 .ranked > .three-stars::after {
