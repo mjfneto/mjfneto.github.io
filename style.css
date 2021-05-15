@@ -87,14 +87,28 @@ section {
   left: 0;
   right: 0;
   z-index: -1;
-  background: url("./img/tahitian_landscape_paul_gauguin.jpg") no-repeat center
+  background: url("./img/tahitian_landscape_paul_gauguin.jpg") no-repeat fixed
     top/cover; /* License: Public domain */
   padding: 20px 0;
   opacity: 0.45;
-  transition: opacity 1s;
+  transition: opacity 1s ease;
 }
 
-.banner-info:hover + .banner {
+.banner-info:hover + .banner-title + .banner {
+  opacity: 0.8;
+}
+
+.about-me > .banner-title {
+  display: inline;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  background: #fdf0e3;
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.banner-info:hover + .banner-title {
   opacity: 0.8;
 }
 
@@ -127,6 +141,11 @@ section {
 
 .about-me > .info {
   text-align: center;
+  transition: opacity 400ms;
+}
+
+.banner-info:hover + .banner-title + .banner + .info {
+  opacity: 0.05;
 }
 
 #avatar {
@@ -134,13 +153,12 @@ section {
   height: 150px;
   padding: 0.5rem;
   border-radius: 50%;
-  background: #f9fde290;
-  transition: all 400ms;
+  background: goldenrod;
+  transition: all 400ms ease;
 }
 
 #avatar:hover {
   border-radius: 5%;
-  background: #f9fde2;
 }
 
 #index > li > a {
