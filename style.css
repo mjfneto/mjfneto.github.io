@@ -90,7 +90,12 @@ section {
   background: url("./img/tahitian_landscape_paul_gauguin.jpg") no-repeat center
     top/cover; /* License: Public domain */
   padding: 20px 0;
-  opacity: 0.65;
+  opacity: 0.45;
+  transition: opacity 1s;
+}
+
+.banner-info:hover + .banner {
+  opacity: 0.8;
 }
 
 .about-me .banner-info {
@@ -98,11 +103,11 @@ section {
   bottom: 5px;
   right: 5px;
   opacity: 0.5;
-  transition: opacity 200ms;
+  transition: opacity 400ms;
 }
 
 .about-me .banner-info:hover {
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .about-me .name {
