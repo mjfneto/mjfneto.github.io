@@ -23,14 +23,22 @@ h2 > a,
 h3 > a,
 h4 > a,
 h5 > a,
-h6 > a {
-  width: 100%;
+h6 > a,
+nav a {
+  display: block;
 }
 
 a {
   padding: 5px;
   text-decoration: none;
   color: initial;
+}
+
+a:hover {
+  background-color: #fde2e7;
+}
+
+a[target="_blank"] {
   display: inline-block;
 }
 
@@ -52,11 +60,6 @@ section {
 
 .justify-cntr {
   justify-content: center;
-}
-
-.hover-linen:hover {
-  cursor: pointer;
-  background-color: #fde2e7;
 }
 
 .container {
@@ -171,9 +174,8 @@ section {
   border-radius: 5%;
 }
 
-#index > li > a {
-  display: block;
-  width: 100%;
+.header-navigation li ~ li {
+  margin-left: 2rem;
 }
 
 .skills {
