@@ -205,11 +205,11 @@ section {
   content: "\2714";
 }
 
-#external-resources {
+#favorite-content {
   padding-left: 12px;
 }
 
-#external-resources li.newsletter::before {
+#favorite-content li.newsletter::before {
   content: "📰";
 }
 
