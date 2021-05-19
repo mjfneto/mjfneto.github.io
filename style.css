@@ -76,13 +76,13 @@ section {
   max-width: 100%;
 }
 
-.about-me {
+.author-info {
   position: relative;
   padding: 20px;
   font: 300 16px / normal "Spartan", "Courier New", Courier, monospace;
 }
 
-.about-me > .banner-info {
+.author-info > .banner-info {
   position: absolute;
   bottom: 5px;
   right: 5px;
@@ -90,11 +90,11 @@ section {
   transition: opacity 400ms;
 }
 
-.about-me > .banner-info:hover {
+.author-info > .banner-info:hover {
   opacity: 1;
 }
 
-.about-me > .banner {
+.author-info > .banner {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -112,7 +112,7 @@ section {
   opacity: 0.8;
 }
 
-.about-me > .banner-title {
+.author-info > .banner-title {
   display: inline;
   position: absolute;
   bottom: 5px;
@@ -133,30 +133,30 @@ section {
   opacity: 0;
 }
 
-.about-me .name {
+.author-info .name {
   font-weight: inherit;
 }
 
-.about-me .position {
+.author-info .position {
   font-size: 1.4rem;
   font-weight: 400;
 }
 
-.about-me .state {
+.author-info .state {
   font-weight: 400;
 }
 
-.about-me .social {
+.author-info .social {
   margin: 10px 0;
   text-align: center;
 }
 
-.about-me .social > .medium {
+.author-info .social > .medium {
   margin: 0 2.5px;
   transition: background 200ms;
 }
 
-.about-me > .info {
+.author-info > .info {
   text-align: center;
   transition: opacity 400ms;
 }
