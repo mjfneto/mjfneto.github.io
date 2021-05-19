@@ -8,10 +8,8 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 
-ul,
-li {
+ul {
   list-style: none;
-  padding-left: 0;
 }
 
 li {
@@ -184,29 +182,17 @@ section {
   margin-left: 2rem;
 }
 
-.skills {
-  padding-left: 12px;
+.index-list {
+  padding-left: 0rem;
 }
 
-.skills > li:nth-child(even) {
-  color: #c0670d;
-}
-
-.skills > li:nth-child(odd) {
-  color: #e07810;
-}
-
-.skills > li::before {
+.skills-list > li::before {
   padding-right: 12px;
   color: initial;
 }
 
-.skills > li.checkmark::before {
+.skills-list > li.checkmark::before {
   content: "\2714";
-}
-
-#favorite-content {
-  padding-left: 12px;
 }
 
 #favorite-content li.newsletter::before {
