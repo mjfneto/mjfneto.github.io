@@ -48,18 +48,6 @@ section {
   margin: 45px 0 60px 0;
 }
 
-.flex {
-  display: flex;
-}
-
-.align-cntr {
-  align-items: center;
-}
-
-.justify-cntr {
-  justify-content: center;
-}
-
 .container {
   max-width: 920px;
   margin: 0 auto;
@@ -79,7 +67,7 @@ section {
 .author-info {
   position: relative;
   padding: 20px;
-  font: 300 16px / normal "Spartan", "Courier New", Courier, monospace;
+  font: 300 1rem / normal "Spartan", "Courier New", Courier, monospace;
 }
 
 .author-info > .banner-info {
@@ -178,8 +166,20 @@ section {
   border-radius: 5%;
 }
 
-.header-navigation li ~ li {
-  margin-left: 2rem;
+
+.header-navigation ul {
+  text-align: center;
+}
+
+.header-navigation li,
+.header-navigation a {
+  display: inline;
+}
+
+.header-navigation li {
+  display: inline;
+  margin-right: 2rem;
+  text-transform: uppercase;
 }
 
 .index-list {
@@ -199,22 +199,39 @@ section {
   content: "📰";
 }
 
-.ranked > li::after {
+.rated .rating::before {
+  margin-left: 1rem;
+}
+
+.rated .rating::before {
   content: "⭐⭐";
-  padding: 0 12px;
   text-shadow: 0px 0px 8px goldenrod;
 }
 
-.ranked > .three-stars::after {
+.rated .rating::after {
+  content: "⭐⭐⭐";
+  color: transparent;
+  text-shadow: 0 0 1px darkgrey;
+}
+
+.rated .rating.three-stars::before {
   content: "⭐⭐⭐";
 }
 
-.ranked > .four-stars::after {
+.rated .rating.three-stars::after {
+  content: "⭐⭐";
+}
+
+.rated .rating.four-stars::before {
   content: "⭐⭐⭐⭐";
 }
 
-.ranked > .five-stars::after {
-  content: "⭐⭐⭐⭐⭐";
+.rated .rating.four-stars::after {
+  content: "⭐";
+}
+
+.rated > .five-stars::after {
+  content: "";
 }
 
 .footer {

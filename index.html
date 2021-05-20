@@ -4,54 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400&display=swap" rel="stylesheet" />
     <title>Mario Freire's Portfolio</title>
   </head>
   <body>
     <header id="top">
       <div class="author-info">
-        <a
-          class="icon banner-info"
-          href="https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_Tahitian_Landscape_-_Google_Art_Project.jpg"
-          target="_blank"
-          ><img
-            src="/img/info.png"
-            title="Gauguin, P. (1891) Tahitian Landscape [Oil on Canvas]. Wikimedia."
-            alt="More information."
+        <a class="icon banner-info" href="https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_Tahitian_Landscape_-_Google_Art_Project.jpg" target="_blank"
+          ><img src="/img/info.png" title="Gauguin, P. (1891) Tahitian Landscape [Oil on Canvas]. Wikimedia." alt="More information."
         /></a>
         <div class="banner"></div>
-        <p class="banner-title">
-          Gauguin, P. (1891) Tahitian Landscape [Oil on Canvas]. Wikimedia.
-        </p>
+        <p class="banner-title">Gauguin, P. (1891) Tahitian Landscape [Oil on Canvas]. Wikimedia.</p>
         <div class="info">
           <img src="img/github_avatar.jpeg" id="avatar" alt="Mario Freire" />
           <h1 class="name">Mario Jardim Freire Neto</h1>
           <p><strong class="position">Frontend Web Developer Jr.</strong></p>
           <p>Resende, <strong class="state">Rio de Janeiro</strong></p>
           <i title="Brazil">🇧🇷</i>
-          <div class="social flex align-cntr justify-cntr">
-            <a
-              class="icon medium"
-              href="https://github.com/mjfneto/"
-              target="_blank"
-              ><img src="/img/github.png" alt="GitHub"
-            /></a>
-            <a
-              class="icon medium"
-              href="https://www.linkedin.com/in/mariojardimfreireneto/"
-              target="_blank"
-              ><img src="/img/linkedin.png" alt="GitHub"
-            /></a>
+          <div class="social">
+            <a class="icon medium" href="https://github.com/mjfneto/" target="_blank"><img src="/img/github.png" alt="GitHub" /></a>
+            <a class="icon medium" href="https://www.linkedin.com/in/mariojardimfreireneto/" target="_blank"><img src="/img/linkedin.png" alt="GitHub" /></a>
           </div>
         </div>
       </div>
       <nav class="header-navigation">
-        <ul class="flex justify-cntr">
+        <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/">About me</a></li>
         </ul>
@@ -74,31 +53,31 @@
             <h3 id="hard-skills">
               <a href="#index">Hard Skills</a>
             </h3>
-            <ul class="skills-list ranked">
-              <li class="checkmark four-stars">English 🇬🇧</li>
-              <li class="checkmark">Bash 🐚</li>
-              <li class="checkmark">Git 🎋</li>
-              <li class="checkmark">GitHub 🐙</li>
-              <li class="checkmark three-stars">HTML 🏗️</li>
-              <li class="checkmark three-stars">CSS 💅</li>
-              <li class="checkmark four-stars">JS ⚙️</li>
-              <li class="checkmark">React ⚛️</li>
+            <ul class="skills-list rated">
+              <li class="checkmark">English 🇬🇧<span class="rating four-stars"></span></li>
+              <li class="checkmark">Bash 🐚<span class="rating"></span></li>
+              <li class="checkmark">Git 🎋<span class="rating"></span></li>
+              <li class="checkmark">GitHub 🐙<span class="rating"></span></li>
+              <li class="checkmark">HTML 🏗️<span class="rating four-stars"></span></li>
+              <li class="checkmark">CSS 💅<span class="rating three-stars"></span></li>
+              <li class="checkmark">JS ⚙️<span class="rating four-stars"></span></li>
+              <li class="checkmark">React ⚛️<span class="rating three-stars"></span></li>
             </ul>
           </section>
           <section>
             <h3 id="soft-skills">
               <a href="#index">Soft Skills</a>
             </h3>
-            <ul class="skills-list ranked">
-              <li class="checkmark three-stars">Communication 🎭</li>
-              <li class="checkmark three-stars">Self-management 🎭</li>
-              <li class="checkmark">Teamwork 🎭</li>
-              <li class="checkmark">Leadership 🎭</li>
-              <li class="checkmark four-stars">Responsibility 🎭</li>
-              <li class="checkmark three-stars">Problem solving 🎭</li>
-              <li class="checkmark">Time management 🎭</li>
-              <li class="checkmark">Ability to work under pressure 🎭</li>
-              <li class="checkmark three-stars">Flexibility 🎭</li>
+            <ul class="skills-list rated">
+              <li class="checkmark three-stars">Communication 🎭<span class="rating three-stars"></span></li>
+              <li class="checkmark three-stars">Self-management 🎭<span class="rating three-stars"></span></li>
+              <li class="checkmark">Teamwork 🎭<span class="rating"></span></li>
+              <li class="checkmark">Leadership 🎭<span class="rating"></span></li>
+              <li class="checkmark four-stars">Responsibility 🎭<span class="rating four-stars"></span></li>
+              <li class="checkmark three-stars">Problem solving 🎭<span class="rating three-stars"></span></li>
+              <li class="checkmark">Time management 🎭<span class="rating"></span></li>
+              <li class="checkmark">Ability to work under pressure 🎭<span class="rating"></span></li>
+              <li class="checkmark three-stars">Flexibility 🎭<span class="rating three-stars"></span></li>
             </ul>
           </section>
           <hr />
@@ -108,9 +87,7 @@
             </h3>
             <ul class="ranked">
               <li class="newsletter five-stars">
-                <a href="https://javascriptweekly.com/" target="_blank"
-                  >JavaScript Weekly</a
-                >
+                <a href="https://javascriptweekly.com/" target="_blank">JavaScript Weekly</a>
               </li>
             </ul>
           </section>
