@@ -79,7 +79,7 @@ section {
 .author-info {
   position: relative;
   padding: 20px;
-  font: 300 16px / normal "Spartan", "Courier New", Courier, monospace;
+  font: 300 1rem / normal "Spartan", "Courier New", Courier, monospace;
 }
 
 .author-info > .banner-info {
@@ -178,8 +178,20 @@ section {
   border-radius: 5%;
 }
 
-.header-navigation li ~ li {
-  margin-left: 2rem;
+
+.header-navigation ul {
+  text-align: center;
+}
+
+.header-navigation li,
+.header-navigation a {
+  display: inline;
+}
+
+.header-navigation li {
+  display: inline;
+  margin-right: 2rem;
+  text-transform: uppercase;
 }
 
 .index-list {
