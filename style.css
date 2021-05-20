@@ -48,18 +48,6 @@ section {
   margin: 45px 0 60px 0;
 }
 
-.flex {
-  display: flex;
-}
-
-.align-cntr {
-  align-items: center;
-}
-
-.justify-cntr {
-  justify-content: center;
-}
-
 .container {
   max-width: 920px;
   margin: 0 auto;
