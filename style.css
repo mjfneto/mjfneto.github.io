@@ -23,7 +23,7 @@ h4 > a,
 h5 > a,
 h6 > a,
 nav a {
-  display: block;
+  display: inline-block;
 }
 
 a {
@@ -166,20 +166,31 @@ section {
   border-radius: 5%;
 }
 
+.header-navigation {
+  overflow: hidden;
+  text-align: center;
+  background: #f1c5ae;
+}
 
 .header-navigation ul {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding-left: 0;
   text-align: center;
 }
 
-.header-navigation li,
-.header-navigation a {
-  display: inline;
-}
 
 .header-navigation li {
   display: inline;
-  margin-right: 2rem;
   text-transform: uppercase;
+}
+
+.header-navigation li ~ li {
+  margin-left: 2rem;
+} 
+
+.header-navigation a {
+  display: inline;
 }
 
 .index-list {
