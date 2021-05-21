@@ -6,6 +6,7 @@ body {
   margin: 0;
   background: #fdf0e3;
   font-family: "Courier New", Courier, monospace;
+  color: #363032;
 }
 
 ul {
@@ -29,11 +30,11 @@ nav a {
 a {
   padding: 5px;
   text-decoration: none;
-  color: initial;
+  color: inherit;
 }
 
 a:hover {
-  background-color: #fde2e7;
+  background-color: #ced2c2;
 }
 
 a[target="_blank"] {
@@ -41,7 +42,7 @@ a[target="_blank"] {
 }
 
 a[target="_blank"]:hover {
-  background-color: #e2fdf0;
+  background-color: #e2cd6d;
 }
 
 section {
@@ -156,14 +157,13 @@ section {
 #avatar {
   width: 150px;
   height: 150px;
-  padding: 0.5rem;
-  border-radius: 50%;
-  background: goldenrod;
-  transition: all 400ms ease;
+  padding: 0.25rem;
+  background: #f1c5ae;
+  transition: background 400ms ease;
 }
 
 #avatar:hover {
-  border-radius: 5%;
+  background: coral;
 }
 
 .header-navigation {
@@ -193,21 +193,8 @@ section {
   display: inline;
 }
 
-.index-list {
-  padding-left: 0rem;
-}
-
-.skills-list > li::before {
+.about-me li::before {
   padding-right: 12px;
-  color: initial;
-}
-
-.skills-list > li.checkmark::before {
-  content: "\2714";
-}
-
-#favorite-content li.newsletter::before {
-  content: "📰";
 }
 
 .rated .rating::before {
@@ -241,8 +228,22 @@ section {
   content: "⭐";
 }
 
-.rated > .five-stars::after {
-  content: "";
+.rated .rating.five-stars::after {
+  content: "⭐⭐⭐";
+  color: initial;
+  text-shadow: 0px 0px 8px goldenrod;
+}
+
+.index-list {
+  padding-left: 0rem;
+}
+
+.skills-list > li.checkmark::before {
+  content: "\2714";
+}
+
+#favorite-content li.newsletter::before {
+  content: "📰";
 }
 
 .footer {
